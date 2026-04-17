@@ -1,12 +1,38 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./src/output.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+  <body class="font-[Montserrat ]">
+    <img class="hidden lg:flex lg:absolute" src="background.png" alt="" />
+    <header class="bg-[#252B42] text-white p-[20px]">
+      <div class="max-w-[1200px] m-auto flex justify-between">
+        <div class="flex gap-[140px] items-center">
+          <h1 class="text-[24px] font-bold">BrandName</h1>
+          <nav class="hidden lg:flex gap-[30px]">
+            <p>Home</p>
+            <p>Product</p>
+            <p>Pricing</p>
+            <p>Contact</p>
+          </nav>
+          <div class="flex lg:hidden items-center gap-[20px]">
+            <img src="icn search .icn-xs.png" alt="" />
+            <img src="icn shopping-cart .icn-xs.png" alt="" />
+            <img src="icn menu .icn-xs.png" alt="" />
+          </div>
+        </div>
+        <div class="hidden lg:flex gap-[20px] items-center">
+          <button class="p-[20px]">Login</button>
+          <button
+            class="py-[10px] px-[20px] bg-[#23A6F0] text-white rounded-[5px]"
+          >
+            Become a member
+          </button>
+        </div>
+      </div>
+    </header>
+  </body>
 </html>
