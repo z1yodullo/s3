@@ -8,7 +8,9 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-blue-950: oklch(28.2% 0.091 267.935);
+    --color-black: #000;
     --color-white: #fff;
+    --spacing: 0.25rem;
     --font-weight-bold: 700;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
@@ -172,6 +174,9 @@
   .z-1 {
     z-index: 1;
   }
+  .m-\[20px\] {
+    margin: 20px;
+  }
   .m-auto {
     margin: auto;
   }
@@ -312,6 +317,9 @@
   .bg-blue-950 {
     background-color: var(--color-blue-950);
   }
+  .bg-white {
+    background-color: var(--color-white);
+  }
   .bg-\[url\(\"\"\)\] {
     background-image: url("");
   }
@@ -336,17 +344,29 @@
   .p-\[20px\] {
     padding: 20px;
   }
+  .p-\[50px\] {
+    padding: 50px;
+  }
   .px-\[10px\] {
     padding-inline: 10px;
   }
   .px-\[20px\] {
     padding-inline: 20px;
   }
+  .px-\[100ps\] {
+    padding-inline: 100ps;
+  }
+  .px-\[100px\] {
+    padding-inline: 100px;
+  }
   .py-\[10px\] {
     padding-block: 10px;
   }
   .py-\[20px\] {
     padding-block: 20px;
+  }
+  .py-\[30px\] {
+    padding-block: 30px;
   }
   .py-\[50px\] {
     padding-block: 50px;
@@ -394,6 +414,12 @@
   .text-\[gray\] {
     color: gray;
   }
+  .text-\[px\] {
+    color: px;
+  }
+  .text-black {
+    color: var(--color-black);
+  }
   .text-white {
     color: var(--color-white);
   }
@@ -407,6 +433,11 @@
   .lg\:absolute {
     @media (width >= 64rem) {
       position: absolute;
+    }
+  }
+  .lg\:m-0 {
+    @media (width >= 64rem) {
+      margin: calc(var(--spacing) * 0);
     }
   }
   .lg\:flex {
@@ -427,6 +458,16 @@
   .lg\:items-start {
     @media (width >= 64rem) {
       align-items: flex-start;
+    }
+  }
+  .lg\:px-\[100px\] {
+    @media (width >= 64rem) {
+      padding-inline: 100px;
+    }
+  }
+  .lg\:py-\[50px\] {
+    @media (width >= 64rem) {
+      padding-block: 50px;
     }
   }
   .lg\:text-start {
