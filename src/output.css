@@ -344,6 +344,9 @@
   .p-\[20px\] {
     padding: 20px;
   }
+  .p-\[30px\] {
+    padding: 30px;
+  }
   .p-\[50px\] {
     padding: 50px;
   }
@@ -373,6 +376,9 @@
   }
   .py-\[100px\] {
     padding-block: 100px;
+  }
+  .py-\[200px\] {
+    padding-block: 200px;
   }
   .text-center {
     text-align: center;
