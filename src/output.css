@@ -356,6 +356,9 @@
   .px-\[20px\] {
     padding-inline: 20px;
   }
+  .px-\[30px\] {
+    padding-inline: 30px;
+  }
   .px-\[100ps\] {
     padding-inline: 100ps;
   }
@@ -395,6 +398,9 @@
   .text-\[24px\] {
     font-size: 24px;
   }
+  .text-\[30px\] {
+    font-size: 30px;
+  }
   .text-\[36px\] {
     font-size: 36px;
   }
@@ -407,6 +413,9 @@
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
+  }
+  .text-\[\#23A6F0\] {
+    color: #23A6F0;
   }
   .text-\[1\] {
     color: 1;
